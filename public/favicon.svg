@@ -1,0 +1,14 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="64" fill="#234B3A"/>
+  <circle cx="128" cy="128" r="96" stroke="#A7B9A1" stroke-width="4" stroke-dasharray="8 8" opacity="0.6"/>
+  <circle cx="128" cy="128" r="82" stroke="#C68C72" stroke-width="2" opacity="0.4"/>
+  <!-- Royal Botanical Droplet & Crown of Vitality -->
+  <path d="M128 44C102 76 74 108 74 138C74 167.823 98.177 192 128 192C157.823 192 182 167.823 182 138C182 108 154 76 128 44Z" 
+        fill="#A7B9A1" fill-opacity="0.25" stroke="#F8F7F1" stroke-width="7" stroke-linejoin="round"/>
+  <!-- Inner Upward Vitality Sprout / Leaf -->
+  <path d="M128 86C128 86 150 112 150 136C150 148.15 140.15 158 128 158C115.85 158 106 148.15 106 136C106 112 128 86 128 86Z" 
+        fill="#C68C72" fill-opacity="0.9" stroke="#F8F7F1" stroke-width="3"/>
+  <!-- Royal Sun Dot -->
+  <circle cx="128" cy="136" r="10" fill="#F8F7F1"/>
+  <circle cx="128" cy="68" r="5" fill="#C68C72"/>
+</svg>

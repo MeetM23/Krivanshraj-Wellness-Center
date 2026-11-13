@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <title>KRIVANSHRAJ Wellness Center | Coach Gohil Pritiba Siddhraj Sinh</title>
+  <link rel="icon" href="./public/favicon.png" type="image/png">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Poppins (400, 500, 600) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#234B3A',
+              light: '#2F5F4A',
+              dark: '#1A392C',
+              surface: '#EAF0EC'
+            },
+            sage: {
+              DEFAULT: '#A7B9A1',
+              light: '#D5DFD1',
+              soft: '#EDF2EB',
+              dark: '#7E9677'
+            },
+            ivory: {
+              DEFAULT: '#F8F7F1',
+              warm: '#F2EFE9',
+              sand: '#E9E4D8'
+            },
+            terracotta: {
+              DEFAULT: '#C68C72',
+              light: '#DFB3A0',
+              soft: '#F6ECE6',
+              dark: '#A3684F'
+            },
+            charcoal: {
+              DEFAULT: '#252A26',
+              muted: '#5A615B',
+              subtle: '#8A948C',
+              border: '#E2E5E0'
+            }
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+            sans: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F8F7F1;
+      color: #252A26;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      width: 100%;
+      position: relative;
+      -webkit-text-size-adjust: 100%;
+    }
+    ::selection {
+      background-color: #234B3A;
+      color: #F8F7F1;
+    }
+    .heading-hero {
+      font-weight: 600;
+      font-size: clamp(28px, 6.5vw, 56px);
+      line-height: 1.18;
+      letter-spacing: -0.02em;
+    }
+    .heading-section {
+      font-weight: 600;
+      font-size: clamp(22px, 5vw, 40px);
+      line-height: 1.25;
+      letter-spacing: -0.015em;
+    }
+    .heading-card {
+      font-weight: 600;
+      font-size: clamp(16px, 2.8vw, 19px);
+      line-height: 1.38;
+      letter-spacing: -0.005em;
+    }
+    .text-subtitle {
+      font-weight: 400;
+      font-size: clamp(13.5px, 2.2vw, 16px);
+      line-height: 1.7;
+      color: #5A615B;
+    }
+    .text-label {
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 1.4;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .btn-primary {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1;
+      letter-spacing: 0.02em;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 13px 24px;
+      border-radius: 9999px;
+      background-color: #234B3A;
+      color: #F8F7F1;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(35, 75, 58, 0.12);
+      touch-action: manipulation;
+    }
+    .btn-primary:hover {
+      background-color: #2F5F4A;
+      box-shadow: 0 4px 12px rgba(35, 75, 58, 0.18);
+    }
+    .btn-primary:active {
+      transform: scale(0.98);
+    }
+    .btn-secondary {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1;
+      letter-spacing: 0.02em;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 24px;
+      border-radius: 9999px;
+      background-color: #FFFFFF;
+      color: #252A26;
+      border: 1px solid #E2E5E0;
+      transition: all 0.2s ease;
+      touch-action: manipulation;
+    }
+    .btn-secondary:hover {
+      background-color: #F8F7F1;
+      border-color: #A7B9A1;
+    }
+    .btn-secondary:active {
+      transform: scale(0.98);
+    }
+    @media screen and (max-width: 767px) {
+      input, select, textarea {
+        font-size: 16px !important;
+      }
+    }
+    [data-lang="gu"] .lang-en { display: none !important; }
+    [data-lang="en"] .lang-gu { display: none !important; }
+  </style>
+</head>
+<body data-lang="en">
+
+  <!-- ========================================================
+       STICKY NAVIGATION BAR
+       ======================================================== -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-ivory/95 backdrop-blur-md border-b border-charcoal-border/50 py-2.5 sm:py-3.5 transition-all">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between gap-2">
+        
+        <!-- Brand Wordmark & Emblem -->
+        <a href="#hero" class="inline-flex items-center gap-2 sm:gap-3 group focus:outline-none shrink-0">
+          <img src="./public/images/brand/krivanshraj-logo.png" alt="Krivanshraj Wellness Center Logo" class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl object-contain shadow-xs transition-transform group-hover:scale-105">
+          <div class="flex flex-col">
+            <span class="font-poppins font-semibold uppercase tracking-[0.14em] sm:tracking-[0.16em] text-[15px] sm:text-xl text-primary leading-none">KRIVANSHRAJ</span>
+            <span class="text-[7.5px] sm:text-[9px] tracking-[0.22em] uppercase font-poppins font-medium mt-1 text-charcoal-muted">WELLNESS CENTER</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7">
+          <a href="#hero" class="text-[14px] font-medium text-charcoal-muted hover:text-charcoal transition-colors">
+            <span class="lang-en">Home</span><span class="lang-gu">મુખ્ય પૃષ્ઠ</span>
+          </a>
+          <a href="#about" class="text-[14px] font-medium text-charcoal-muted hover:text-charcoal transition-colors">
+            <span class="lang-en">About Coach</span><span class="lang-gu">અમારા વિશે</span>
+          </a>
+          <a href="#approach" class="text-[14px] font-medium text-charcoal-muted hover:text-charcoal transition-colors">
+            <span class="lang-en">Our Approach</span><span class="lang-gu">અમારી પદ્ધતિ</span>
+          </a>
+          <a href="#archive" class="text-[14px] font-medium text-charcoal-muted hover:text-charcoal transition-colors">
+            <span class="lang-en">Results</span><span class="lang-gu">પરિણામો</span>
+          </a>
+          <a href="#testimonials" class="text-[14px] font-medium text-charcoal-muted hover:text-charcoal transition-colors">
+            <span class="lang-en">Testimonials</span><span class="lang-gu">પ્રતિસાદ</span>
+          </a>
+          <a href="#faq" class="text-[14px] font-medium text-charcoal-muted hover:text-charcoal transition-colors">
+            <span class="lang-en">FAQ</span><span class="lang-gu">પ્રશ્નો</span>
+          </a>
+          <a href="#contact" class="text-[14px] font-medium text-charcoal-muted hover:text-charcoal transition-colors">
+            <span class="lang-en">Contact</span><span class="lang-gu">સંપર્ક</span>
+          </a>
+        </nav>
+
+        <!-- Header Actions: Language Switch & Consultation CTA -->
+        <div class="hidden sm:flex items-center gap-3 shrink-0">
+          <button id="langToggleBtn" onclick="toggleLanguage()" class="flex items-center gap-1.5 px-3 py-1.5 min-h-[40px] rounded-full border border-charcoal-border/80 text-xs font-medium text-charcoal hover:border-primary hover:text-primary transition-colors bg-white shadow-xs">
+            <i data-lucide="globe" class="w-3.5 h-3.5 text-sage-dark"></i>
+            <span id="langBtnLabel">ગુજરાતી</span>
+          </button>
+          <a href="#contact" class="btn-primary !py-2.5 !px-5 text-xs font-semibold uppercase tracking-wider min-h-[42px]">
+            <span class="lang-en">Book Consultation</span><span class="lang-gu">કન્સલ્ટેશન બુક કરો</span>
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 ml-1"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Controls with 44px touch targets -->
+        <div class="flex items-center gap-2 lg:hidden shrink-0">
+          <button onclick="toggleLanguage()" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-xs font-medium rounded-full border border-charcoal-border bg-white text-charcoal shadow-xs active:bg-black/5">
+            <span class="lang-en">ગુજ</span><span class="lang-gu">EN</span>
+          </button>
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-xl text-charcoal hover:bg-black/5 transition-colors" aria-label="Toggle Navigation">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Modal with Backdrop -->
+    <div id="mobileDrawerModal" class="hidden fixed inset-0 z-50 lg:hidden">
+      <div class="fixed inset-0 bg-charcoal/50 backdrop-blur-xs transition-opacity" onclick="toggleMobileMenu()"></div>
+      <div class="fixed top-0 right-0 bottom-0 w-full max-w-sm bg-ivory shadow-2xl flex flex-col justify-between p-6 overflow-y-auto animate-in slide-in-from-right duration-200 border-l border-charcoal-border/50">
+        <div>
+          <div class="flex items-center justify-between pb-5 border-b border-charcoal-border/40">
+            <div class="inline-flex items-center gap-2">
+              <img src="./public/images/brand/krivanshraj-logo.png" alt="Logo" class="w-8 h-8 rounded-lg object-contain">
+              <span class="font-semibold uppercase tracking-[0.14em] text-base text-primary">KRIVANSHRAJ</span>
+            </div>
+            <button onclick="toggleMobileMenu()" class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full hover:bg-black/5 text-charcoal" aria-label="Close menu">
+              <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+          </div>
+
+          <div class="flex flex-col space-y-1 pt-4">
+            <a href="#hero" onclick="toggleMobileMenu()" class="min-h-[48px] flex items-center text-base font-medium text-charcoal hover:text-primary active:bg-sage-soft/50 rounded-xl px-3 transition-colors">
+              <span class="lang-en">Home</span><span class="lang-gu">મુખ્ય પૃષ્ઠ</span>
+            </a>
+            <a href="#about" onclick="toggleMobileMenu()" class="min-h-[48px] flex items-center text-base font-medium text-charcoal hover:text-primary active:bg-sage-soft/50 rounded-xl px-3 transition-colors">
+              <span class="lang-en">About Coach</span><span class="lang-gu">અમારા વિશે</span>
+            </a>
+            <a href="#approach" onclick="toggleMobileMenu()" class="min-h-[48px] flex items-center text-base font-medium text-charcoal hover:text-primary active:bg-sage-soft/50 rounded-xl px-3 transition-colors">
+              <span class="lang-en">Our Approach</span><span class="lang-gu">અમારી પદ્ધતિ</span>
+            </a>
+            <a href="#archive" onclick="toggleMobileMenu()" class="min-h-[48px] flex items-center text-base font-medium text-charcoal hover:text-primary active:bg-sage-soft/50 rounded-xl px-3 transition-colors">
+              <span class="lang-en">Results</span><span class="lang-gu">પરિણામો</span>
+            </a>
+            <a href="#testimonials" onclick="toggleMobileMenu()" class="min-h-[48px] flex items-center text-base font-medium text-charcoal hover:text-primary active:bg-sage-soft/50 rounded-xl px-3 transition-colors">
+              <span class="lang-en">Testimonials</span><span class="lang-gu">પ્રતિસાદ</span>
+            </a>
+            <a href="#faq" onclick="toggleMobileMenu()" class="min-h-[48px] flex items-center text-base font-medium text-charcoal hover:text-primary active:bg-sage-soft/50 rounded-xl px-3 transition-colors">
+              <span class="lang-en">FAQ</span><span class="lang-gu">પ્રશ્નો</span>
+            </a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="min-h-[48px] flex items-center text-base font-medium text-charcoal hover:text-primary active:bg-sage-soft/50 rounded-xl px-3 transition-colors">
+              <span class="lang-en">Contact</span><span class="lang-gu">સંપર્ક</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="pt-6 border-t border-charcoal-border/40 space-y-3">
+          <button onclick="toggleLanguage()" class="w-full min-h-[46px] rounded-xl border border-charcoal-border flex items-center justify-center gap-2 text-sm font-medium text-charcoal bg-white shadow-xs">
+            <i data-lucide="globe" class="w-4 h-4 text-sage-dark"></i>
+            <span class="lang-en">ગુજરાતી ભાષા પસંદ કરો</span>
+            <span class="lang-gu">Switch to English</span>
+          </button>
+          <a href="#contact" onclick="toggleMobileMenu()" class="w-full btn-primary min-h-[50px] text-xs uppercase tracking-wider justify-center">
+            <span class="lang-en">Book a Consultation</span><span class="lang-gu">કન્સલ્ટેશન બુક કરો</span>
+          </a>
+          <p class="text-center text-[11px] text-charcoal-subtle pt-1">
+            Bhavnagar • +91 76238 13787
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       HERO SECTION
+       ======================================================== -->
+  <section id="hero" class="relative pt-24 pb-16 sm:pt-32 sm:pb-24 lg:pt-44 lg:pb-32 bg-ivory overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-sage/5 to-transparent"></div>
+    </div>
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="max-w-3xl">
+
+        <!-- Eyebrow Pill -->
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-charcoal-border/80 shadow-xs mb-5 sm:mb-7 max-w-full">
+          <span class="w-2 h-2 rounded-full bg-primary shrink-0"></span>
+          <span class="text-[11px] sm:text-xs font-medium text-charcoal truncate">
+            <span class="lang-en">Krivanshraj Wellness Center • Bhavnagar, Gujarat</span>
+            <span class="lang-gu">ક્રિવાંશરાજ વેલનેસ સેન્ટર • ભાવનગર, ગુજરાત</span>
+          </span>
+        </div>
+
+        <!-- Heading -->
+        <h1 class="heading-hero mb-4 sm:mb-6 text-charcoal">
+          <span class="lang-en">Sustainable Health, <span class="text-primary">Measurable</span> Transformations.</span>
+          <span class="lang-gu">યોગ્ય પોષણ અને સાચી જીવનશૈલીથી <span class="text-primary">તંદુરસ્ત જીવનની</span> નવી શરૂઆત.</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-subtitle max-w-2xl mb-7 sm:mb-9 font-light">
+          <span class="lang-en">No extreme starvation or temporary crash diets. Experience lifelong vitality and visceral fat reduction through personalized nutrition, habit guidance, and 1-on-1 coaching by Gohil Pritiba Siddhraj Sinh.</span>
+          <span class="lang-gu">કઠોર ભૂખમરા કે અસ્થાયી ડાયેટ પ્લાન વિના — કોચ ગોહિલ પ્રીતિબા સિદ્ધરાજ સિંહના અંગત માર્ગદર્શન, સંતુલિત ઘરેલું પોષણ અને રોજિંદી આદતો દ્વારા સાચી શારીરિક સુખાકારી મેળવો.</span>
+        </p>
+
+        <!-- CTA Row - Full width on mobile -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 mb-8 sm:mb-10">
+          <a href="#contact" class="btn-primary w-full sm:w-auto group justify-center text-center">
+            <span class="lang-en">Book a Consultation</span><span class="lang-gu">કન્સલ્ટેશન શરૂ કરો</span>
+            <i data-lucide="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+          </a>
+          <a href="#archive" class="btn-secondary w-full sm:w-auto justify-center text-center">
+            <span class="lang-en">Explore Client Results</span><span class="lang-gu">પરિણામો જુઓ</span>
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="pt-6 sm:pt-7 border-t border-charcoal-border/60 grid grid-cols-1 sm:flex sm:flex-wrap gap-x-6 gap-y-3">
+          <div class="flex items-center gap-2 text-xs font-medium text-charcoal-muted">
+            <i data-lucide="check-circle-2" class="w-4 h-4 text-primary shrink-0"></i>
+            <span class="lang-en">1-on-1 Personal Coaching</span><span class="lang-gu">અંગત 1-on-1 કોચિંગ</span>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-medium text-charcoal-muted">
+            <i data-lucide="check-circle-2" class="w-4 h-4 text-primary shrink-0"></i>
+            <span class="lang-en">No Starvation Diets</span><span class="lang-gu">કોઈ કડક ભૂખમરો નહીં</span>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-medium text-charcoal-muted">
+            <i data-lucide="check-circle-2" class="w-4 h-4 text-primary shrink-0"></i>
+            <span class="lang-en">Online & Bhavnagar Center</span><span class="lang-gu">ઓનલાઇન & ભાવનગર સેન્ટર</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       ABOUT FOUNDER & PHILOSOPHY
+       ======================================================== -->
+  <section id="about" class="py-16 sm:py-20 lg:py-24 bg-white border-y border-charcoal-border/40 relative">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-2xl mb-8 sm:mb-12 lg:mb-16">
+        <span class="text-[11px] uppercase tracking-[0.2em] font-semibold text-terracotta">
+          <span class="lang-en">Founder & Philosophy</span><span class="lang-gu">સ્થાપક અને ફિલસૂફી</span>
+        </span>
+        <h2 class="font-serif text-2xl sm:text-4xl lg:text-5xl font-medium text-charcoal mt-1.5 sm:mt-2 leading-tight">
+          <span class="lang-en">Health is True Wealth — <span class="italic font-normal text-primary">Meet Coach Gohil Pritiba</span></span>
+          <span class="lang-gu">સ્વાસ્થ્ય એ જ સાચી સંપત્તિ છે – <span class="italic font-normal text-primary">ગોહિલ પ્રીતિબા સિદ્ધરાજ સિંહ</span></span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start">
+        
+        <!-- Left Column: Core Narrative -->
+        <div class="lg:col-span-7 space-y-5 sm:space-y-6">
+          <div class="p-4 sm:p-6 rounded-2xl bg-ivory border-l-2 border-primary space-y-2.5 sm:space-y-3">
+            <span class="text-[10px] uppercase tracking-wider font-semibold text-primary">
+              <span class="lang-en">Direct Statement from Coach Pritiba (Gujarati)</span>
+              <span class="lang-gu">મૂળ વિચાર અને સંદેશ</span>
+            </span>
+            <p class="text-sm sm:text-lg text-charcoal leading-relaxed italic">
+              “નમસ્તે! હું ગોહિલ પ્રીતિબા સિદ્ધરાજ સિંહ, હું Wellness Coach તરીકે કાર્યરત છું. મેં પોતે ૮૪ કિલોથી ૬૫ કિલો સુધી પહોંચીને ૧૯ કિલો વજન ઘટાડીને નવું જીવન મેળવ્યું છે. મારો ઉદ્દેશ્ય લોકોને યોગ્ય પોષણ, સ્વસ્થ જીવનશૈલી અને સકારાત્મક માર્ગદર્શન દ્વારા સ્વસ્થ, સુંદર અને ખુશહાલ જીવન જીવવા માટે પ્રેરિત કરવાનો છે. હું માનું છું કે સ્વાસ્થ્ય એ જ સાચી સંપત્તિ છે.”
+            </p>
+          </div>
+
+          <p class="text-charcoal-muted text-xs sm:text-base leading-relaxed font-light">
+            <span class="lang-en">At Krivanshraj Wellness Center, health is not approached as an intimidating regimen or temporary diet. Coach Gohil Pritiba Siddhraj Sinh mentors each individual with compassionate accountability—identifying metabolic habits, educating on wholesome nutrition, and instilling daily wellness practices that endure for life.</span>
+            <span class="lang-gu">ક્રિવાંશરાજ વેલનેસ સેન્ટરની સ્થાપના દરેક પરિવારમાં સાચી સ્વાસ્થ્ય જાગૃતિ પહોંચાડવાના ઉદ્દેશ્ય સાથે કરવામાં આવી છે. અમારો અભિગમ અકુદરતી શોર્ટકટ કે દવાઓ પર નહીં, પરંતુ યોગ્ય ઘરેલું આહાર, પાણીનું સંતુલન અને દૈનિક આદતોના સકારાત્મક સુધારા પર આધારિત છે.</span>
+          </p>
+
+          <div class="pt-2 space-y-3">
+            <div class="flex items-start gap-3">
+              <span class="w-5 h-5 rounded-full bg-sage-soft text-primary flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-3 h-3 stroke-[3]"></i>
+              </span>
+              <div>
+                <h3 class="text-xs font-semibold uppercase tracking-wider text-charcoal">
+                  <span class="lang-en">Foundation of Happiness</span><span class="lang-gu">સુખી જીવનનો પાયો</span>
+                </h3>
+                <p class="text-xs text-charcoal-muted mt-0.5 font-light">
+                  <span class="lang-en">Good health is the bedrock upon which vitality, mental peace, and family happiness rest.</span>
+                  <span class="lang-gu">સારું સ્વાસ્થ્ય સુખી જીવનનો મૂળ આધાર છે.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span class="w-5 h-5 rounded-full bg-sage-soft text-primary flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-3 h-3 stroke-[3]"></i>
+              </span>
+              <div>
+                <h3 class="text-xs font-semibold uppercase tracking-wider text-charcoal">
+                  <span class="lang-en">Family-Wide Nutrition Literacy</span><span class="lang-gu">સમગ્ર પરિવારનું કલ્યાણ</span>
+                </h3>
+                <p class="text-xs text-charcoal-muted mt-0.5 font-light">
+                  <span class="lang-en">Creating long-term nutritional knowledge so every member of your household thrives together.</span>
+                  <span class="lang-gu">દરેક વ્યક્તિ સુધી સાચી સમજ પહોંચે અને દરેક પરિવાર સ્વસ્થ બને.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span class="w-5 h-5 rounded-full bg-sage-soft text-primary flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="check" class="w-3 h-3 stroke-[3]"></i>
+              </span>
+              <div>
+                <h3 class="text-xs font-semibold uppercase tracking-wider text-charcoal">
+                  <span class="lang-en">Bhavnagar Center & Remote Coaching</span><span class="lang-gu">ભાવનગર સેન્ટર અને ઓનલાઇન સુવિધા</span>
+                </h3>
+                <p class="text-xs text-charcoal-muted mt-0.5 font-light">
+                  <span class="lang-en">Accessible 1-on-1 consultations in Bhavnagar or structured online coaching anywhere.</span>
+                  <span class="lang-gu">ભાવનગરમાં રૂબરૂ કન્સલ્ટેશન અથવા ઘેરબેઠા ઓનલાઇન કોચિંગ.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Coach Proof Card -->
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl bg-ivory p-5 sm:p-6 border border-charcoal-border/70 space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <i data-lucide="file-text" class="w-4 h-4 text-primary"></i>
+                <span class="text-xs font-semibold uppercase tracking-wider text-charcoal">Founder Journey & Verification</span>
+              </div>
+              <span class="text-[10px] text-charcoal-subtle uppercase tracking-wider">Documented Proof</span>
+            </div>
+
+            <div onclick="openModal()" class="relative aspect-[4/3] rounded-xl overflow-hidden bg-white border border-charcoal-border/60 cursor-pointer group">
+              <img src="./public/images/brand/coach-pritiba-transformation.jpg" alt="Coach Gohil Pritiba Personal Transformation" class="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-300">
+              <div class="absolute inset-0 bg-charcoal/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/95 text-charcoal text-xs font-semibold shadow-md">
+                  <i data-lucide="eye" class="w-3.5 h-3.5 text-primary"></i>
+                  <span>Inspect Coach Transformation</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="text-xs text-charcoal-muted space-y-1 font-light">
+              <p><strong>Coach:</strong> Gohil Pritiba Siddhraj Sinh (વેલનેસ કોચ)</p>
+              <p><strong>Center:</strong> Aakhlol Jakatnaka, Opp. 369 Hotel, Darbargadh, Bhavnagar (364002)</p>
+              <p><strong>Direct Line:</strong> +91 76238 13787</p>
+            </div>
+
+            <button onclick="openModal()" class="w-full min-h-[46px] py-2.5 rounded-xl border border-charcoal-border hover:border-primary text-charcoal hover:text-primary text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 bg-white shadow-xs">
+              <i data-lucide="eye" class="w-3.5 h-3.5 text-primary"></i>
+              <span class="lang-en">View Verified Transformation Record</span>
+              <span class="lang-gu">પ્રમાણિત સફર જુઓ</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       WELLNESS APPROACH
+       ======================================================== -->
+  <section id="approach" class="py-16 sm:py-20 lg:py-24 bg-ivory">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-2xl mb-10 sm:mb-14 lg:mb-16">
+        <span class="text-label text-terracotta">
+          <span class="lang-en">Process & Methodology</span><span class="lang-gu">અમારી કાર્યપદ્ધતિ</span>
+        </span>
+        <h2 class="heading-section mt-1.5 sm:mt-2 text-charcoal">
+          <span class="lang-en">A Disciplined, <span class="text-primary font-semibold">Four-Step</span> Transformation.</span>
+          <span class="lang-gu">સ્વાસ્થ્ય સુધારણાની <span class="text-primary font-semibold">૪ તબક્કાની સફર</span></span>
+        </h2>
+        <p class="text-subtitle mt-2 sm:mt-3">
+          <span class="lang-en">We reject short-lived diet fads. True physical vitality is systematically built through routine evaluation, clean dietary timing, habit architecture, and direct personal mentorship.</span>
+          <span class="lang-gu">અમે કોઈ શોર્ટકટ કે હાનિકારક પદ્ધતિમાં માનતા નથી. સાચું પરિવર્તન યોગ્ય સમજ, સંતુલિત આહાર અને સાતત્યથી જ શક્ય બને છે.</span>
+        </p>
+      </div>
+
+      <!-- 4 Steps Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16">
+        <div class="p-5 sm:p-6 rounded-2xl bg-white border border-charcoal-border/70 flex flex-col justify-between shadow-xs">
+          <div>
+            <span class="font-poppins font-semibold text-2xl text-primary/70 block mb-2 sm:mb-3">01</span>
+            <h3 class="heading-card mb-2">
+              <span class="lang-en">Routine & Metabolic Assessment</span><span class="lang-gu">દિનચર્યા અને સ્વાસ્થ્ય મૂલ્યાંકન</span>
+            </h3>
+            <p class="text-xs text-charcoal-muted font-light leading-relaxed">
+              <span class="lang-en">We analyze your daily routine, sleep rhythm, water habits, physical activity, and persistent fatigue points.</span>
+              <span class="lang-gu">તમારી રોજિંદી જીવનશૈલી, ઊંઘ, પાણી પીવાની આદતો અને શારીરિક થાકના કારણોનું વિશ્લેષણ કરવામાં આવે છે.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="p-5 sm:p-6 rounded-2xl bg-white border border-charcoal-border/70 flex flex-col justify-between shadow-xs">
+          <div>
+            <span class="font-poppins font-semibold text-2xl text-primary/70 block mb-2 sm:mb-3">02</span>
+            <h3 class="heading-card mb-2">
+              <span class="lang-en">Personalized Nutrition Architecture</span><span class="lang-gu">વ્યક્તિગત સંતુલિત આહાર આયોજન</span>
+            </h3>
+            <p class="text-xs text-charcoal-muted font-light leading-relaxed">
+              <span class="lang-en">Developing a wholesome meal structure focused on balanced macros and cellular nourishment without starvation.</span>
+              <span class="lang-gu">કુટુંબ સાથે નિયમિત ભોજન લેતા લેતા યોગ્ય પોષક તત્વો અને કેલરી સંતુલન શીખવાની સહજ વૈજ્ઞાનિક પદ્ધતિ.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="p-5 sm:p-6 rounded-2xl bg-white border border-charcoal-border/70 flex flex-col justify-between shadow-xs">
+          <div>
+            <span class="font-poppins font-semibold text-2xl text-primary/70 block mb-2 sm:mb-3">03</span>
+            <h3 class="heading-card mb-2">
+              <span class="lang-en">Daily Hydration & Wellness Habits</span><span class="lang-gu">દૈનિક પાણી અને સકારાત્મક આદતો</span>
+            </h3>
+            <p class="text-xs text-charcoal-muted font-light leading-relaxed">
+              <span class="lang-en">Introducing essential daily rituals—optimal water timing, mindful eating, and stress moderation.</span>
+              <span class="lang-gu">પાણી પીવાનો સાચો સમય, પૂરતી ઊંઘ, માનસિક શાંતિ અને નાની નાની દૈનિક ટેવો જે ઊર્જા જાળવી રાખે છે.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="p-5 sm:p-6 rounded-2xl bg-white border border-charcoal-border/70 flex flex-col justify-between shadow-xs">
+          <div>
+            <span class="font-poppins font-semibold text-2xl text-primary/70 block mb-2 sm:mb-3">04</span>
+            <h3 class="heading-card mb-2">
+              <span class="lang-en">1-on-1 Coach Mentorship & Tracking</span><span class="lang-gu">અંગત કોચ ફોલો-અપ અને માર્ગદર્શન</span>
+            </h3>
+            <p class="text-xs text-charcoal-muted font-light leading-relaxed">
+              <span class="lang-en">Regular progress reviews with Coach Gohil Pritiba Siddhraj Sinh. Continuous accountability ensures lasting results.</span>
+              <span class="lang-gu">કોચ ગોહિલ પ્રીતિબા સિદ્ધરાજ સિંહ સાથે નિયમિત પ્રોગ્રેસ રિવ્યુ, સાચી પ્રેરણા અને અંગત સાથ.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Program Pillars -->
+      <div class="pt-8 sm:pt-10 border-t border-charcoal-border/60">
+        <h3 class="text-label text-charcoal-subtle mb-5 sm:mb-6">
+          <span class="lang-en">Core Program Pillars</span><span class="lang-gu">મુખ્ય ફાયદાઓ</span>
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-5">
+          <div class="flex items-start gap-3 p-3.5 sm:p-4 rounded-xl bg-white/70 border border-charcoal-border/50 shadow-2xs">
+            <div class="w-8 h-8 rounded-lg bg-sage-soft text-primary flex items-center justify-center shrink-0 mt-0.5">
+              <i data-lucide="scale" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold text-charcoal uppercase tracking-wider">
+                <span class="lang-en">Visceral Fat & Inch Loss</span><span class="lang-gu">હાનિકારક ફેટ અને કમર ઘટાડો</span>
+              </h4>
+              <p class="text-[11px] text-charcoal-muted mt-0.5 font-light">Targeting stubborn abdominal fat while preserving lean vitality.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3.5 sm:p-4 rounded-xl bg-white/70 border border-charcoal-border/50 shadow-2xs">
+            <div class="w-8 h-8 rounded-lg bg-sage-soft text-primary flex items-center justify-center shrink-0 mt-0.5">
+              <i data-lucide="heart-pulse" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold text-charcoal uppercase tracking-wider">
+                <span class="lang-en">All-Day Active Vitality</span><span class="lang-gu">દિવસભર જોરદાર સ્ફૂર્તિ</span>
+              </h4>
+              <p class="text-[11px] text-charcoal-muted mt-0.5 font-light">Relieving persistent body aches, fatigue, and sluggishness.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3.5 sm:p-4 rounded-xl bg-white/70 border border-charcoal-border/50 shadow-2xs">
+            <div class="w-8 h-8 rounded-lg bg-sage-soft text-primary flex items-center justify-center shrink-0 mt-0.5">
+              <i data-lucide="sparkles" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold text-charcoal uppercase tracking-wider">
+                <span class="lang-en">Skin & Cellular Health</span><span class="lang-gu">આંતરિક પોષણ અને ત્વચા ગ્લો</span>
+              </h4>
+              <p class="text-[11px] text-charcoal-muted mt-0.5 font-light">Nourishing from within to calm chronic skin flares and blemishes.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 p-3.5 sm:p-4 rounded-xl bg-white/70 border border-charcoal-border/50 shadow-2xs">
+            <div class="w-8 h-8 rounded-lg bg-sage-soft text-primary flex items-center justify-center shrink-0 mt-0.5">
+              <i data-lucide="shield-check" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <h4 class="text-xs font-semibold text-charcoal uppercase tracking-wider">
+                <span class="lang-en">Lifelong Sustainable Habits</span><span class="lang-gu">જીવનપર્યંત ટકતી તંદુરસ્તી</span>
+              </h4>
+              <p class="text-[11px] text-charcoal-muted mt-0.5 font-light">Practical principles that protect you from rebounding weight.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       TRANSFORMATION SHOWCASE & ARCHIVE
+       ======================================================== -->
+  <section id="archive" class="py-16 sm:py-20 lg:py-24 bg-white border-b border-charcoal-border/40 relative">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-2xl mb-8 sm:mb-10 lg:mb-14">
+        <span class="text-label text-terracotta">
+          <span class="lang-en">Verified Client Outcomes</span><span class="lang-gu">પ્રમાણિત ક્લાયન્ટ આર્કાઇવ</span>
+        </span>
+        <h2 class="heading-section mt-1.5 sm:mt-2 text-charcoal">
+          <span class="lang-en">Documented Transformation Archive</span><span class="lang-gu">પરિવર્તન પરિણામોનો સંગ્રહ</span>
+        </h2>
+        <p class="text-subtitle mt-2 sm:mt-3">
+          <span class="lang-en">Inspect individual client journeys across weight loss, healthy gain, skin wellness, and vitality.</span>
+          <span class="lang-gu">વજન ઘટાડો, સ્વસ્થ વજન વધારો, ચામડીની રાહત અને ઊર્જા સુધારણાની વાસ્તવિક સફરનું નિરીક્ષણ કરો.</span>
+        </p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-8 sm:mb-10 -mx-4 px-4 sm:mx-0 sm:px-0">
+        <button onclick="filterGallery('all')" class="filter-btn active px-3.5 sm:px-4 py-2 min-h-[42px] rounded-full text-xs font-medium whitespace-nowrap bg-primary text-ivory border border-primary shadow-xs shrink-0" data-category="all">
+          <span class="lang-en">All Results</span><span class="lang-gu">બધા પરિણામો</span>
+        </button>
+        <button onclick="filterGallery('weight-loss')" class="filter-btn px-3.5 sm:px-4 py-2 min-h-[42px] rounded-full text-xs font-medium whitespace-nowrap bg-ivory hover:bg-black/5 text-charcoal border border-charcoal-border/70 shrink-0" data-category="weight-loss">
+          <span class="lang-en">Weight Loss</span><span class="lang-gu">વજન ઘટાડો</span>
+        </button>
+        <button onclick="filterGallery('weight-management')" class="filter-btn px-3.5 sm:px-4 py-2 min-h-[42px] rounded-full text-xs font-medium whitespace-nowrap bg-ivory hover:bg-black/5 text-charcoal border border-charcoal-border/70 shrink-0" data-category="weight-management">
+          <span class="lang-en">Healthy Gain</span><span class="lang-gu">સ્વસ્થ વજન વધારો</span>
+        </button>
+        <button onclick="filterGallery('lifestyle')" class="filter-btn px-3.5 sm:px-4 py-2 min-h-[42px] rounded-full text-xs font-medium whitespace-nowrap bg-ivory hover:bg-black/5 text-charcoal border border-charcoal-border/70 shrink-0" data-category="lifestyle">
+          <span class="lang-en">Skin & Allergy Relief</span><span class="lang-gu">સ્કીન & એલર્જી મુક્તિ</span>
+        </button>
+        <button onclick="filterGallery('vitality')" class="filter-btn px-3.5 sm:px-4 py-2 min-h-[42px] rounded-full text-xs font-medium whitespace-nowrap bg-ivory hover:bg-black/5 text-charcoal border border-charcoal-border/70 shrink-0" data-category="vitality">
+          <span class="lang-en">Energy & Vitality</span><span class="lang-gu">ઊર્જા & તેજ</span>
+        </button>
+      </div>
+
+      <!-- 8 Transformation Cards Grid -->
+      <div id="galleryGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        
+        <!-- Card 1: Coach Pritiba Fat Loss -->
+        <div class="gallery-card group rounded-2xl bg-white border border-charcoal-border/80 overflow-hidden flex flex-col justify-between shadow-xs hover:shadow-md transition-all duration-300" data-category="weight-loss">
+          <div class="relative aspect-[4/5] bg-ivory-warm overflow-hidden cursor-pointer" onclick="openLightbox(0)">
+            <img src="./public/images/transformations/transformation-1-pritiba-fatloss-19kg.jpg" alt="19 kg Weight Loss - Coach Gohil Pritiba" class="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-300">
+            <div class="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md bg-white/95 text-[10px] uppercase font-semibold text-primary shadow-xs border border-charcoal-border/50">
+              <span class="lang-en">Weight Loss & Energy</span><span class="lang-gu">વજન ઘટાડો અને ઊર્જા</span>
+            </div>
+            <div class="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-white/90 flex items-center justify-center opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
+              <i data-lucide="zoom-in" class="w-4 h-4 text-primary"></i>
+            </div>
+          </div>
+          <div class="p-4 sm:p-6 flex flex-col justify-between flex-1">
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>-19 kg</strong> (Total Loss)</span>
+                </span>
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>84 kg → 65 kg</strong></span>
+                </span>
+              </div>
+              <h3 class="heading-card mb-2">
+                <span class="lang-en">19 kg Weight & Fat Loss: 84 kg to 65 kg</span>
+                <span class="lang-gu">૮૪ કિલો થી ૬૫ કિલો – ૧૯ કિલો વજન અને ફેટ લોસ</span>
+              </h3>
+              <p class="text-xs text-charcoal-muted font-light line-clamp-3">
+                <span class="lang-en">An inspiring personal wellness journey demonstrating sustainable fat loss from 84 kg down to a healthy 65 kg.</span>
+                <span class="lang-gu">૮૪ કિલો થી ૬૫ કિલો સુધીનું પ્રેરક પરિવર્તન. યોગ્ય આહાર અને પાણીના સંતુલન દ્વારા ૧૯ કિલો વજન ઘટાડીને શરીર ફિટ બન્યું.</span>
+              </p>
+            </div>
+            <div class="pt-3 sm:pt-4 mt-3 sm:mt-4 border-t border-charcoal-border/40 flex items-center justify-between min-h-[44px]">
+              <button onclick="openLightbox(0)" class="min-h-[44px] text-xs font-medium text-primary hover:text-primary-light flex items-center gap-1">
+                <span class="lang-en">Inspect Case File</span><span class="lang-gu">સંપૂર્ણ વિગત જુઓ</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <span class="text-[10px] text-charcoal-subtle uppercase">Verified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: 20kg Loss (78kg -> 58kg) -->
+        <div class="gallery-card group rounded-2xl bg-white border border-charcoal-border/80 overflow-hidden flex flex-col justify-between shadow-xs hover:shadow-md transition-all duration-300" data-category="weight-loss">
+          <div class="relative aspect-[4/5] bg-ivory-warm overflow-hidden cursor-pointer" onclick="openLightbox(1)">
+            <img src="./public/images/transformations/transformation-2-weightloss-20kg.jpg" alt="20 kg Weight Loss: 78 kg to 58 kg" class="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-300">
+            <div class="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md bg-white/95 text-[10px] uppercase font-semibold text-primary shadow-xs border border-charcoal-border/50">
+              <span class="lang-en">Weight Loss Journeys</span><span class="lang-gu">વજન ઘટાડાની સફર</span>
+            </div>
+            <div class="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-white/90 flex items-center justify-center opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
+              <i data-lucide="zoom-in" class="w-4 h-4 text-primary"></i>
+            </div>
+          </div>
+          <div class="p-4 sm:p-6 flex flex-col justify-between flex-1">
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>-20 kg</strong> (Milestone)</span>
+                </span>
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>78 kg → 58 kg</strong></span>
+                </span>
+              </div>
+              <h3 class="heading-card mb-2">
+                <span class="lang-en">20 kg Milestone: 78 kg to 58 kg Transformation</span>
+                <span class="lang-gu">૭૮ કિલો થી ૫૮ કિલો – ૨૦ કિલો વજન ઘટાડાની સફર</span>
+              </h3>
+              <p class="text-xs text-charcoal-muted font-light line-clamp-3">
+                <span class="lang-en">Achieved with clean dietary rhythm, portion education, and coach accountability without skipping regular meals.</span>
+                <span class="lang-gu">૭૮ કિલોથી ૫૮ કિલો સુધીનું પરિવર્તન. યોગ્ય ખાનપાનની આદતો અને નિયમિત કોચિંગ દ્વારા ૨૦ કિલો વજન ઘટાડ્યું.</span>
+              </p>
+            </div>
+            <div class="pt-3 sm:pt-4 mt-3 sm:mt-4 border-t border-charcoal-border/40 flex items-center justify-between min-h-[44px]">
+              <button onclick="openLightbox(1)" class="min-h-[44px] text-xs font-medium text-primary hover:text-primary-light flex items-center gap-1">
+                <span class="lang-en">Inspect Case File</span><span class="lang-gu">સંપૂર્ણ વિગત જુઓ</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <span class="text-[10px] text-charcoal-subtle uppercase">Verified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Men's Abdominal Fat Loss -->
+        <div class="gallery-card group rounded-2xl bg-white border border-charcoal-border/80 overflow-hidden flex flex-col justify-between shadow-xs hover:shadow-md transition-all duration-300" data-category="weight-loss">
+          <div class="relative aspect-[4/5] bg-ivory-warm overflow-hidden cursor-pointer" onclick="openLightbox(2)">
+            <img src="./public/images/transformations/transformation-3-mens-fatloss.jpg" alt="Men's Abdominal Fat Loss" class="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-300">
+            <div class="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md bg-white/95 text-[10px] uppercase font-semibold text-primary shadow-xs border border-charcoal-border/50">
+              <span class="lang-en">Visceral Fat & Posture</span><span class="lang-gu">હાનિકારક ફેટ અને કમર ઘટાડો</span>
+            </div>
+            <div class="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-white/90 flex items-center justify-center opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
+              <i data-lucide="zoom-in" class="w-4 h-4 text-primary"></i>
+            </div>
+          </div>
+          <div class="p-4 sm:p-6 flex flex-col justify-between flex-1">
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>Abdominal Bulk</strong> Reduced</span>
+                </span>
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>Posture</strong> Slim & Fit</span>
+                </span>
+              </div>
+              <h3 class="heading-card mb-2">
+                <span class="lang-en">Abdominal & Visceral Fat Loss: Posture Transformation</span>
+                <span class="lang-gu">પેટની ચરબી અને કમર ઘટાડો – પુરુષો માટે ફિટનેસ પરિવર્તન</span>
+              </h3>
+              <p class="text-xs text-charcoal-muted font-light line-clamp-3">
+                <span class="lang-en">Targeted posture and abdominal contour improvement by swapping unhealthy snacking with structured nutrient timing.</span>
+                <span class="lang-gu">પેટની વધારાની ચરબી દૂર થઈ, શરીરના પોશ્ચરમાં સુધારો થયો અને આખો દિવસ ઊર્જાવાન રહેવાની નવી ટેવ પડી.</span>
+              </p>
+            </div>
+            <div class="pt-3 sm:pt-4 mt-3 sm:mt-4 border-t border-charcoal-border/40 flex items-center justify-between min-h-[44px]">
+              <button onclick="openLightbox(2)" class="min-h-[44px] text-xs font-medium text-primary hover:text-primary-light flex items-center gap-1">
+                <span class="lang-en">Inspect Case File</span><span class="lang-gu">સંપૂર્ણ વિગત જુઓ</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <span class="text-[10px] text-charcoal-subtle uppercase">Verified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Convalescent Recovery to 55kg -->
+        <div class="gallery-card group rounded-2xl bg-white border border-charcoal-border/80 overflow-hidden flex flex-col justify-between shadow-xs hover:shadow-md transition-all duration-300" data-category="weight-management">
+          <div class="relative aspect-[4/5] bg-ivory-warm overflow-hidden cursor-pointer" onclick="openLightbox(3)">
+            <img src="./public/images/transformations/transformation-4-recovery-gain.jpg" alt="Recovery to 55 kg" class="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-300">
+            <div class="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md bg-white/95 text-[10px] uppercase font-semibold text-primary shadow-xs border border-charcoal-border/50">
+              <span class="lang-en">Recovery & Healthy Gain</span><span class="lang-gu">રિકવરી અને વજન વધારો</span>
+            </div>
+            <div class="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-white/90 flex items-center justify-center opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
+              <i data-lucide="zoom-in" class="w-4 h-4 text-primary"></i>
+            </div>
+          </div>
+          <div class="p-4 sm:p-6 flex flex-col justify-between flex-1">
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>+10 kg</strong> Healthy Gain</span>
+                </span>
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>45 kg → 55 kg</strong></span>
+                </span>
+              </div>
+              <h3 class="heading-card mb-2">
+                <span class="lang-en">Hospital Recovery to 55 kg: Healthy Weight Gain</span>
+                <span class="lang-gu">હોસ્પિટલ રિકવરી થી ૫૫ કિલો – સ્વસ્થ વજન વધારો અને પુનર્જીવન</span>
+              </h3>
+              <p class="text-xs text-charcoal-muted font-light line-clamp-3">
+                <span class="lang-en">Progressed from post-illness hospital bed weakness (45 kg) to a strong, energized 55 kg.</span>
+                <span class="lang-gu">સ્વાસ્થ્ય માત્ર વજન ઘટાડવા પૂરતું નથી. નબળાઈમાંથી બહાર આવીને ૪૫ કિલોથી ૫૫ કિલો સુધી શરીરને પુનર્જીવિત કરવાની પ્રેરક સફર.</span>
+              </p>
+            </div>
+            <div class="pt-3 sm:pt-4 mt-3 sm:mt-4 border-t border-charcoal-border/40 flex items-center justify-between min-h-[44px]">
+              <button onclick="openLightbox(3)" class="min-h-[44px] text-xs font-medium text-primary hover:text-primary-light flex items-center gap-1">
+                <span class="lang-en">Inspect Case File</span><span class="lang-gu">સંપૂર્ણ વિગત જુઓ</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <span class="text-[10px] text-charcoal-subtle uppercase">Verified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Hetalba Rajput Chronic Skin Relief -->
+        <div class="gallery-card group rounded-2xl bg-white border border-charcoal-border/80 overflow-hidden flex flex-col justify-between shadow-xs hover:shadow-md transition-all duration-300" data-category="lifestyle">
+          <div class="relative aspect-[4/5] bg-ivory-warm overflow-hidden cursor-pointer" onclick="openLightbox(4)">
+            <img src="./public/images/transformations/transformation-5-hetalba-skin-allergy.jpg" alt="Hetalba Rajput Skin Relief" class="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-300">
+            <div class="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md bg-white/95 text-[10px] uppercase font-semibold text-primary shadow-xs border border-charcoal-border/50">
+              <span class="lang-en">Skin & Allergy Relief</span><span class="lang-gu">સ્કીન અને એલર્જી મુક્તિ</span>
+            </div>
+            <div class="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-white/90 flex items-center justify-center opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
+              <i data-lucide="zoom-in" class="w-4 h-4 text-primary"></i>
+            </div>
+          </div>
+          <div class="p-4 sm:p-6 flex flex-col justify-between flex-1">
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>Since Age 7</strong> Chronic</span>
+                </span>
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>4 Months</strong> Lasting Relief</span>
+                </span>
+              </div>
+              <h3 class="heading-card mb-2">
+                <span class="lang-en">Hetalba Rajput: Chronic Skin Allergy Relief</span>
+                <span class="lang-gu">હેતલબા રાજપૂત: બાળપણની ચામડીની ગંભીર ખંજવાળ અને એલર્જીમાંથી મુક્તિ</span>
+              </h3>
+              <p class="text-xs text-charcoal-muted font-light line-clamp-3">
+                <span class="lang-en">Relief from chronic skin itching endured since age 7 through 4 months of cellular nutrition and hydration.</span>
+                <span class="lang-gu">૭ વર્ષની ઉંમરથી આખા શરીરમાં ચામડીની ગંભીર ખંજવાળ હતી. ૪ મહિના યોગ્ય ન્યુટ્રીશન લેવાથી સંપૂર્ણ રાહત મળી.</span>
+              </p>
+            </div>
+            <div class="pt-3 sm:pt-4 mt-3 sm:mt-4 border-t border-charcoal-border/40 flex items-center justify-between min-h-[44px]">
+              <button onclick="openLightbox(4)" class="min-h-[44px] text-xs font-medium text-primary hover:text-primary-light flex items-center gap-1">
+                <span class="lang-en">Inspect Case File</span><span class="lang-gu">સંપૂર્ણ વિગત જુઓ</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <span class="text-[10px] text-charcoal-subtle uppercase">Verified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Child Skin & Allergy Wellness -->
+        <div class="gallery-card group rounded-2xl bg-white border border-charcoal-border/80 overflow-hidden flex flex-col justify-between shadow-xs hover:shadow-md transition-all duration-300" data-category="lifestyle">
+          <div class="relative aspect-[4/5] bg-ivory-warm overflow-hidden cursor-pointer" onclick="openLightbox(5)">
+            <img src="./public/images/transformations/transformation-6-child-skin-wellness.jpg" alt="Child Skin & Allergy Relief" class="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-300">
+            <div class="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md bg-white/95 text-[10px] uppercase font-semibold text-primary shadow-xs border border-charcoal-border/50">
+              <span class="lang-en">Pediatric & Cellular Wellness</span><span class="lang-gu">બાળ સ્વાસ્થ્ય & પોષણ</span>
+            </div>
+            <div class="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-white/90 flex items-center justify-center opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
+              <i data-lucide="zoom-in" class="w-4 h-4 text-primary"></i>
+            </div>
+          </div>
+          <div class="p-4 sm:p-6 flex flex-col justify-between flex-1">
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>Skin & Dust Allergy</strong> Relieved</span>
+                </span>
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>Urine Frequency</strong> Normal</span>
+                </span>
+              </div>
+              <h3 class="heading-card mb-2">
+                <span class="lang-en">Pediatric Wellness: Relief from Allergies & Distress</span>
+                <span class="lang-gu">બાળ સ્વાસ્થ્ય: સ્કીન પ્રોબ્લેમ, ધૂળની એલર્જી અને યુરિન સમસ્યામાં સુધારો</span>
+              </h3>
+              <p class="text-xs text-charcoal-muted font-light line-clamp-3">
+                <span class="lang-en">Proper micro-nutrient support and hydration helped calm skin sensitivity, dust allergies, and urine frequency.</span>
+                <span class="lang-gu">બાળકની ચામડીની સમસ્યા, ખંજવાળ, ધૂળની એલર્જી અને વારંવાર પેશાબ જવાની તકલીફમાં ઉત્તમ સુધારો જોવા મળ્યો.</span>
+              </p>
+            </div>
+            <div class="pt-3 sm:pt-4 mt-3 sm:mt-4 border-t border-charcoal-border/40 flex items-center justify-between min-h-[44px]">
+              <button onclick="openLightbox(5)" class="min-h-[44px] text-xs font-medium text-primary hover:text-primary-light flex items-center gap-1">
+                <span class="lang-en">Inspect Case File</span><span class="lang-gu">સંપૂર્ણ વિગત જુઓ</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <span class="text-[10px] text-charcoal-subtle uppercase">Verified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7: Vitiligo Pigmentation -->
+        <div class="gallery-card group rounded-2xl bg-white border border-charcoal-border/80 overflow-hidden flex flex-col justify-between shadow-xs hover:shadow-md transition-all duration-300" data-category="lifestyle">
+          <div class="relative aspect-[4/5] bg-ivory-warm overflow-hidden cursor-pointer" onclick="openLightbox(6)">
+            <img src="./public/images/transformations/transformation-7-vitiligo-pigmentation.jpg" alt="Skin Pigmentation Recovery" class="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-300">
+            <div class="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md bg-white/95 text-[10px] uppercase font-semibold text-primary shadow-xs border border-charcoal-border/50">
+              <span class="lang-en">Skin & Cellular Health</span><span class="lang-gu">ત્વચા & આંતરિક પોષણ</span>
+            </div>
+            <div class="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-white/90 flex items-center justify-center opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
+              <i data-lucide="zoom-in" class="w-4 h-4 text-primary"></i>
+            </div>
+          </div>
+          <div class="p-4 sm:p-6 flex flex-col justify-between flex-1">
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>Tone Evening</strong> Out</span>
+                </span>
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>Cellular</strong> Nutrition</span>
+                </span>
+              </div>
+              <h3 class="heading-card mb-2">
+                <span class="lang-en">Cellular Nutrition for Skin Pigmentation Wellness</span>
+                <span class="lang-gu">આંતરિક પોષણ દ્વારા ત્વચાના ડાઘ અને પિગમેન્ટેશનમાં સકારાત્મક સુધારો</span>
+              </h3>
+              <p class="text-xs text-charcoal-muted font-light line-clamp-3">
+                <span class="lang-en">Internal cleansing and micronutrient balance supported skin melanin balance and tone evening out.</span>
+                <span class="lang-gu">શરીરના આંતરિક પોષણ દ્વારા ત્વચાની પિગમેન્ટેશનની સમસ્યામાં નોંધપાત્ર સુધારો થયો અને ત્વચા સ્વસ્થ બની.</span>
+              </p>
+            </div>
+            <div class="pt-3 sm:pt-4 mt-3 sm:mt-4 border-t border-charcoal-border/40 flex items-center justify-between min-h-[44px]">
+              <button onclick="openLightbox(6)" class="min-h-[44px] text-xs font-medium text-primary hover:text-primary-light flex items-center gap-1">
+                <span class="lang-en">Inspect Case File</span><span class="lang-gu">સંપૂર્ણ વિગત જુઓ</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <span class="text-[10px] text-charcoal-subtle uppercase">Verified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8: Eye & Facial Vitality -->
+        <div class="gallery-card group rounded-2xl bg-white border border-charcoal-border/80 overflow-hidden flex flex-col justify-between shadow-xs hover:shadow-md transition-all duration-300" data-category="vitality">
+          <div class="relative aspect-[4/5] bg-ivory-warm overflow-hidden cursor-pointer" onclick="openLightbox(7)">
+            <img src="./public/images/transformations/transformation-8-eye-facial-vitality.jpg" alt="Eye & Facial Vitality" class="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-300">
+            <div class="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-md bg-white/95 text-[10px] uppercase font-semibold text-primary shadow-xs border border-charcoal-border/50">
+              <span class="lang-en">Facial & Eye Vitality</span><span class="lang-gu">ચહેરાનું કુદરતી તેજ</span>
+            </div>
+            <div class="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-white/90 flex items-center justify-center opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
+              <i data-lucide="zoom-in" class="w-4 h-4 text-primary"></i>
+            </div>
+          </div>
+          <div class="p-4 sm:p-6 flex flex-col justify-between flex-1">
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>Eye Brightness</strong> Clear</span>
+                </span>
+                <span class="px-2.5 py-1 rounded-md bg-ivory border border-charcoal-border/60 text-[11px] sm:text-xs font-medium text-charcoal flex items-center gap-1">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i>
+                  <span><strong>Natural Glow</strong> Radiant</span>
+                </span>
+              </div>
+              <h3 class="heading-card mb-2">
+                <span class="lang-en">Eye & Facial Cellular Vitality: Clear & Rejuvenated</span>
+                <span class="lang-gu">આંખ અને ચહેરાનું અદ્ભુત પરિણામ – કુદરતી તેજ અને તાજગી</span>
+              </h3>
+              <p class="text-xs text-charcoal-muted font-light line-clamp-3">
+                <span class="lang-en">Demonstrating how proper hydration and antioxidant intake revitalize the eyes and facial complexion naturally.</span>
+                <span class="lang-gu">યોગ્ય પોષક તત્વો, પાણી અને આરામની આદતોથી આંખો અને ચહેરા પર અદ્ભુત કુદરતી તેજ અને ચમક પ્રાપ્ત થઈ.</span>
+              </p>
+            </div>
+            <div class="pt-3 sm:pt-4 mt-3 sm:mt-4 border-t border-charcoal-border/40 flex items-center justify-between min-h-[44px]">
+              <button onclick="openLightbox(7)" class="min-h-[44px] text-xs font-medium text-primary hover:text-primary-light flex items-center gap-1">
+                <span class="lang-en">Inspect Case File</span><span class="lang-gu">સંપૂર્ણ વિગત જુઓ</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+              <span class="text-[10px] text-charcoal-subtle uppercase">Verified</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Transparency Notice -->
+      <div class="mt-10 sm:mt-12 text-center max-w-xl mx-auto p-4 rounded-xl bg-ivory border border-charcoal-border/60 text-xs text-charcoal-muted leading-relaxed font-light">
+        <strong><span class="lang-en">Transparency Notice:</span><span class="lang-gu">નોંધ:</span></strong>
+        <span class="lang-en">Results may vary from person to person based on consistency, metabolic rate, and individual dedication. Krivanshraj Wellness Center emphasizes sustainable lifestyle modifications and balanced nutrition.</span>
+        <span class="lang-gu">આ તમામ પરિણામો વ્યક્તિદીઠ અલગ હોઈ શકે છે. ક્રિવાંશરાજ વેલનેસ સેન્ટર ટકાઉ જીવનશૈલી સુધારણા અને સંતુલિત પોષણ દ્વારા પરિણામો મેળવવામાં મદદ કરે છે.</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       TESTIMONIALS
+       ======================================================== -->
+  <section id="testimonials" class="py-16 sm:py-20 lg:py-24 bg-ivory">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-2xl mb-8 sm:mb-12 lg:mb-16">
+        <span class="text-label text-terracotta">
+          <span class="lang-en">Client Voices</span><span class="lang-gu">વાસ્તવિક પ્રતિસાદ</span>
+        </span>
+        <h2 class="heading-section mt-1.5 sm:mt-2 text-charcoal">
+          <span class="lang-en">Transformations Grounded in <span class="text-primary font-semibold">Trust & Consistency.</span></span>
+          <span class="lang-gu">વિશ્વાસ અને સાતત્યથી <span class="text-primary font-semibold">સફળ થયેલા અનુભવો</span></span>
+        </h2>
+        <p class="text-subtitle mt-2 sm:mt-3">
+          <span class="lang-en">Read real stories of individuals who reclaimed their physical stamina, reduced visceral waist fat, and embraced healthy habits under Coach Gohil Pritiba's mentorship.</span>
+          <span class="lang-gu">અમારા ક્લાયન્ટ્સના શબ્દો જે દર્શાવે છે કે યોગ્ય પોષણ અને કોચિંગથી જીવનમાં કેવું સકારાત્મક પરિવર્તન આવી શકે છે.</span>
+        </p>
+      </div>
+
+      <!-- Testimonials 2x2 Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 lg:gap-8">
+        
+        <div class="p-5 sm:p-7 md:p-8 rounded-2xl bg-white border border-charcoal-border/70 shadow-xs flex flex-col justify-between">
+          <div>
+            <i data-lucide="quote" class="w-6 h-6 sm:w-7 sm:h-7 text-sage mb-3 sm:mb-4 stroke-1"></i>
+            <p class="text-charcoal text-xs sm:text-base leading-relaxed italic mb-5 sm:mb-6">
+              <span class="lang-en">“I suffered from severe full-body skin itching since I was 7 years old. No medicines gave lasting relief until I started this nutrition 4 months ago under Coach Pritiba. The constant itch is completely gone, and I am so happy and relieved.”</span>
+              <span class="lang-gu">“બાળપણમાં ૭ વર્ષની હતી ત્યારથી આખા શરીરમાં ચામડીની ગંભીર ખંજવાળ રહેતી. ૪ મહિનાથી કોચ પ્રીતિબાના માર્ગદર્શનમાં આ ન્યુટ્રીશન શરૂ કર્યું અને ખંજવાળમાં સાવ ફરક પડી ગયો. હવે હું ખૂબ જ ખુશ છું.”</span>
+            </p>
+          </div>
+          <div class="pt-4 sm:pt-5 border-t border-charcoal-border/40 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3">
+            <div>
+              <h4 class="font-semibold text-charcoal text-sm">
+                <span class="lang-en">Hetalba Rajput</span><span class="lang-gu">હેતલબા રાજપૂત</span>
+              </h4>
+              <p class="text-xs text-charcoal-subtle font-light">
+                Bhavnagar • <span class="lang-en">Chronic Skin Relief</span><span class="lang-gu">ચામડીની ખંજવાળ અને એલર્જી મુક્તિ</span>
+              </p>
+            </div>
+            <div class="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-md bg-ivory border border-charcoal-border text-[11px] sm:text-xs font-medium text-primary self-start sm:self-auto">
+              <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-primary"></i>
+              <span>Chronic Relief in 4 Months</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-5 sm:p-7 md:p-8 rounded-2xl bg-white border border-charcoal-border/70 shadow-xs flex flex-col justify-between">
+          <div>
+            <i data-lucide="quote" class="w-6 h-6 sm:w-7 sm:h-7 text-sage mb-3 sm:mb-4 stroke-1"></i>
+            <p class="text-charcoal text-xs sm:text-base leading-relaxed italic mb-5 sm:mb-6">
+              <span class="lang-en">“Stepping down from 78 kg to 58 kg transformed my life. I learned how to eat right without cutting out real family meals. Coach Pritiba made me feel confident that a healthy body is truly sustainable.”</span>
+              <span class="lang-gu">“૭૮ કિલોથી ૫૮ કિલો સુધી પહોંચવું મારા માટે એક નવું જીવન મળવા જેવું છે. ક્યારેય ભૂખ્યા રહ્યા વગર સંતુલિત આહારની સાચી સમજ મળી.”</span>
+            </p>
+          </div>
+          <div class="pt-4 sm:pt-5 border-t border-charcoal-border/40 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3">
+            <div>
+              <h4 class="font-semibold text-charcoal text-sm">
+                <span class="lang-en">Verified Member</span><span class="lang-gu">પ્રમાણિત સભ્ય</span>
+              </h4>
+              <p class="text-xs text-charcoal-subtle font-light">
+                Online Coaching • <span class="lang-en">20 kg Weight Reduction</span><span class="lang-gu">૨૦ કિલો વજન ઘટાડો</span>
+              </p>
+            </div>
+            <div class="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-md bg-ivory border border-charcoal-border text-[11px] sm:text-xs font-medium text-primary self-start sm:self-auto">
+              <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-primary"></i>
+              <span>78 kg to 58 kg (-20 kg)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-5 sm:p-7 md:p-8 rounded-2xl bg-white border border-charcoal-border/70 shadow-xs flex flex-col justify-between">
+          <div>
+            <i data-lucide="quote" class="w-6 h-6 sm:w-7 sm:h-7 text-sage mb-3 sm:mb-4 stroke-1"></i>
+            <p class="text-charcoal text-xs sm:text-base leading-relaxed italic mb-5 sm:mb-6">
+              <span class="lang-en">“After being discharged from the hospital at just 45 kg, I had zero strength. Through precise nutritional coaching, I gained 10 kg of lean healthy weight to reach 55 kg, feeling strong, active, and fully recovered.”</span>
+              <span class="lang-gu">“હોસ્પિટલમાંથી ડિસ્ચાર્જ થયા પછી ૪૫ કિલો વજન સાથે નબળાઈ હતી. કોચિંગ અને યોગ્ય પોષણથી ૧૦ કિલો સ્વસ્થ વજન વધીને ૫૫ કિલો થયું અને નવી શક્તિ મળી.”</span>
+            </p>
+          </div>
+          <div class="pt-4 sm:pt-5 border-t border-charcoal-border/40 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3">
+            <div>
+              <h4 class="font-semibold text-charcoal text-sm">
+                <span class="lang-en">Convalescent Recovery Member</span><span class="lang-gu">સ્વાસ્થ્ય સુધાર સભ્ય</span>
+              </h4>
+              <p class="text-xs text-charcoal-subtle font-light">
+                Bhavnagar Center • <span class="lang-en">Health & Weight Gain</span><span class="lang-gu">શારીરિક પુનઃપ્રાપ્તિ અને વજન વધારો</span>
+              </p>
+            </div>
+            <div class="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-md bg-ivory border border-charcoal-border text-[11px] sm:text-xs font-medium text-primary self-start sm:self-auto">
+              <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-primary"></i>
+              <span>45 kg to 55 kg (+10 kg)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-5 sm:p-7 md:p-8 rounded-2xl bg-white border border-charcoal-border/70 shadow-xs flex flex-col justify-between">
+          <div>
+            <i data-lucide="quote" class="w-6 h-6 sm:w-7 sm:h-7 text-sage mb-3 sm:mb-4 stroke-1"></i>
+            <p class="text-charcoal text-xs sm:text-base leading-relaxed italic mb-5 sm:mb-6">
+              <span class="lang-en">“Shedding stubborn abdominal bulk felt impossible until I understood food timing and proper hydration. My posture straightened, excess fat reduced, and I feel energized from morning till night.”</span>
+              <span class="lang-gu">“પેટની વધારાની ચરબી દૂર થવાથી શરીર હળવુંફૂલ થઈ ગયું. ચાલવામાં અને દૈનિક કામોમાં હવે કોઈ થાક લાગતો નથી અને આખો દિવસ ઊર્જા રહે છે.”</span>
+            </p>
+          </div>
+          <div class="pt-4 sm:pt-5 border-t border-charcoal-border/40 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3">
+            <div>
+              <h4 class="font-semibold text-charcoal text-sm">
+                <span class="lang-en">Verified Member</span><span class="lang-gu">પ્રમાણિત સભ્ય</span>
+              </h4>
+              <p class="text-xs text-charcoal-subtle font-light">
+                Bhavnagar • <span class="lang-en">Waist & Posture Correction</span><span class="lang-gu">પેટની ચરબી અને પોશ્ચર સુધારો</span>
+              </p>
+            </div>
+            <div class="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-md bg-ivory border border-charcoal-border text-[11px] sm:text-xs font-medium text-primary self-start sm:self-auto">
+              <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-primary"></i>
+              <span>Visceral Fat & Posture</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FAQ SECTION
+       ======================================================== -->
+  <section id="faq" class="py-16 sm:py-20 lg:py-24 bg-white border-y border-charcoal-border/40">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-2xl mb-8 sm:mb-12 lg:mb-16">
+        <span class="text-label text-terracotta">
+          <span class="lang-en">Frequently Asked Questions</span><span class="lang-gu">સામાન્ય પ્રશ્નો</span>
+        </span>
+        <h2 class="heading-section mt-1.5 sm:mt-2 text-charcoal">
+          <span class="lang-en">Clear Answers for Your <span class="text-primary font-semibold">Wellness Journey.</span></span>
+          <span class="lang-gu">સ્વાસ્થ્ય યાત્રા અંગેના <span class="text-primary font-semibold">મહત્વના પ્રશ્નો</span></span>
+        </h2>
+        <p class="text-subtitle mt-2 sm:mt-3">
+          <span class="lang-en">Everything you need to know about starting your personalized nutrition and lifestyle routine with Coach Pritiba.</span>
+          <span class="lang-gu">અમારા આહાર, ઓનલાઇન કન્સલ્ટેશન અને પર્સનલ કોચિંગ અંગે સામાન્ય રીતે પૂછાતા પ્રશ્નોના જવાબો.</span>
+        </p>
+      </div>
+
+      <div class="max-w-3xl space-y-3">
+        
+        <div class="faq-item rounded-xl border border-charcoal-border/70 overflow-hidden bg-ivory/50">
+          <button onclick="toggleFaq(this)" class="w-full px-4 sm:px-5 py-4 min-h-[52px] text-left flex items-center justify-between gap-3 font-medium text-charcoal hover:text-primary transition-colors">
+            <span class="text-xs sm:text-base leading-snug">
+              <span class="lang-en">Do I have to follow restrictive starvation or give up regular family meals?</span>
+              <span class="lang-gu">શું મારે કડક ભૂખ્યા રહેવું પડશે કે ઘરનું સામાન્ય ભોજન છોડવું પડશે?</span>
+            </span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-charcoal-subtle transition-transform shrink-0"></i>
+          </button>
+          <div class="faq-content px-4 sm:px-5 pb-5 pt-1 text-xs sm:text-sm text-charcoal-muted leading-relaxed font-light border-t border-charcoal-border/30">
+            <span class="lang-en">No. Coach Pritiba's philosophy strictly rejects starvation diets. You will learn proper portion awareness, nutrient timing, and balanced home-cooked meals that nourish your body sustainably without disconnecting you from family dining.</span>
+            <span class="lang-gu">બિલકુલ નહીં. કોચ પ્રીતિબાનો અભિગમ કઠોર ભૂખમરાનો વિરોધ કરે છે. તમે ઘરના સાત્વિક ભોજન સાથે યોગ્ય પોષક તત્વો, પાણીનો સમય અને પ્રમાણસર આહાર લેવાની સાચી પદ્ધતિ શીખશો.</span>
+          </div>
+        </div>
+
+        <div class="faq-item rounded-xl border border-charcoal-border/70 overflow-hidden bg-ivory/50">
+          <button onclick="toggleFaq(this)" class="w-full px-4 sm:px-5 py-4 min-h-[52px] text-left flex items-center justify-between gap-3 font-medium text-charcoal hover:text-primary transition-colors">
+            <span class="text-xs sm:text-base leading-snug">
+              <span class="lang-en">Is online coaching available if I live outside Bhavnagar?</span>
+              <span class="lang-gu">જો હું ભાવનગર બહાર રહું છું, તો શું મને ઓનલાઇન માર્ગદર્શન મળી શકે?</span>
+            </span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-charcoal-subtle transition-transform shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-4 sm:px-5 pb-5 pt-1 text-xs sm:text-sm text-charcoal-muted leading-relaxed font-light border-t border-charcoal-border/30">
+            <span class="lang-en">Yes, absolutely. Krivanshraj Wellness Center offers dedicated Online Health Coaching (ઓનલાઇન હેલ્થ કોચિંગ). Coach Pritiba guides clients remotely via scheduled phone calls, WhatsApp check-ins, and digital progress tracking.</span>
+            <span class="lang-gu">હા, ચોક્કસ. ક્રિવાંશરાજ વેલનેસ સેન્ટર દ્વારા ઓનલાઇન હેલ્થ કોચિંગ સુવિધા ઉપલબ્ધ છે. કોચ પ્રીતિબા ફોન કોલ્સ અને વોટ્સએપ દ્વારા નિયમિત ફોલો-અપ અને માર્ગદર્શન પૂરું પાડે છે.</span>
+          </div>
+        </div>
+
+        <div class="faq-item rounded-xl border border-charcoal-border/70 overflow-hidden bg-ivory/50">
+          <button onclick="toggleFaq(this)" class="w-full px-4 sm:px-5 py-4 min-h-[52px] text-left flex items-center justify-between gap-3 font-medium text-charcoal hover:text-primary transition-colors">
+            <span class="text-xs sm:text-base leading-snug">
+              <span class="lang-en">How is weight management personalized for each individual?</span>
+              <span class="lang-gu">દરેક વ્યક્તિ માટે વજન નિયંત્રણ પ્લાન કેવી રીતે તૈયાર થાય છે?</span>
+            </span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-charcoal-subtle transition-transform shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-4 sm:px-5 pb-5 pt-1 text-xs sm:text-sm text-charcoal-muted leading-relaxed font-light border-t border-charcoal-border/30">
+            <span class="lang-en">Every body type, metabolic rate, work routine, and health history is unique. We evaluate your daily activity, water intake, sleep rhythm, and specific goals to design a custom roadmap.</span>
+            <span class="lang-gu">દરેક વ્યક્તિની શારીરિક ક્ષમતા, જીવનશૈલી અને જરૂરિયાત અલગ હોય છે. તમારી દિનચર્યા, ઊંઘ, પાણી અને આરોગ્ય સ્થિતિને ધ્યાનમાં રાખીને સંપૂર્ણપણે વ્યક્તિગત પ્લાન બનાવવામાં આવે છે.</span>
+          </div>
+        </div>
+
+        <div class="faq-item rounded-xl border border-charcoal-border/70 overflow-hidden bg-ivory/50">
+          <button onclick="toggleFaq(this)" class="w-full px-4 sm:px-5 py-4 min-h-[52px] text-left flex items-center justify-between gap-3 font-medium text-charcoal hover:text-primary transition-colors">
+            <span class="text-xs sm:text-base leading-snug">
+              <span class="lang-en">Do you also help with healthy weight gain, skin allergies, or pediatric nutrition?</span>
+              <span class="lang-gu">શું તમે સ્વસ્થ વજન વધારવા, ચામડીની તકલીફો કે બાળકોના પોષણ માટે મદદ કરો છો?</span>
+            </span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-charcoal-subtle transition-transform shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-4 sm:px-5 pb-5 pt-1 text-xs sm:text-sm text-charcoal-muted leading-relaxed font-light border-t border-charcoal-border/30">
+            <span class="lang-en">Yes. Wellness extends beyond weight loss. Our verified client outcomes include post-hospital recovery (45 kg to 55 kg), chronic skin and itching relief (as documented with Hetalba Rajput), and pediatric allergy support.</span>
+            <span class="lang-gu">હા. સાચું સ્વાસ્થ્ય માત્ર વજન ઘટાડવા પૂરતું સીમિત નથી. નબળાઈમાંથી બહાર આવીને સ્વસ્થ વજન વધારવા (૪૫ કિલોથી ૫૫ કિલો) તેમજ ચામડીની વર્ષો જૂની ખંજવાળ કે બાળકોની એલર્જીમાં સંતુલિત પોષણ દ્વારા ઉત્તમ પરિણામ મળે છે.</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       CONTACT & APPOINTMENTS
+       ======================================================== -->
+  <section id="contact" class="py-16 sm:py-20 lg:py-24 bg-ivory relative">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start">
+        
+        <!-- Left: CTA Details -->
+        <div class="lg:col-span-6 space-y-5 sm:space-y-6">
+          <span class="text-label text-terracotta">
+            <span class="lang-en">Get In Touch</span><span class="lang-gu">સંપર્ક કરો</span>
+          </span>
+          <h2 class="heading-section text-charcoal">
+            <span class="lang-en">Begin Your Personalized <span class="text-primary font-semibold">Wellness Journey.</span></span>
+            <span class="lang-gu">તમારી વ્યક્તિગત સ્વાસ્થ્ય સફર <span class="text-primary font-semibold">આજથી શરૂ કરો.</span></span>
+          </h2>
+          <p class="text-subtitle font-light max-w-lg">
+            <span class="lang-en">At Krivanshraj Wellness Center, every transformation begins with an open conversation. Connect with Coach Gohil Pritiba Siddhraj Sinh to understand how personalized nutrition and sustainable daily habits can transform your health.</span>
+            <span class="lang-gu">ક્રિવાંશરાજ વેલનેસ સેન્ટરમાં અમે દરેક વ્યક્તિને સાંભળીને અંગત માર્ગદર્શન આપીએ છીએ. ભાવનગર સેન્ટર પર રૂબરૂ મુલાકાત અથવા ઘેરબેઠા ઓનલાઇન કન્સલ્ટેશન માટે આજે જ જોડાઓ.</span>
+          </p>
+
+          <div class="pt-2">
+            <a href="https://wa.me/917623813787?text=Hello%20Coach%20Pritiba%2C%20I%20would%20like%20to%20begin%20my%20personalized%20wellness%20and%20health%20transformation%20journey%20with%20Krivanshraj%20Wellness%20Center." target="_blank" rel="noopener noreferrer" class="btn-primary w-full sm:w-auto !py-3.5 !px-7 min-h-[50px] text-xs font-semibold uppercase tracking-wider group justify-center text-center shadow-md">
+              <i data-lucide="message-circle" class="w-5 h-5 mr-2 text-[#25D366]"></i>
+              <span class="lang-en">Chat Directly on WhatsApp</span><span class="lang-gu">વોટ્સએપ પર વાતચીત શરૂ કરો</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1"></i>
+            </a>
+          </div>
+
+          <div class="p-4 rounded-xl bg-white border border-charcoal-border/70 max-w-lg text-xs text-charcoal-muted leading-relaxed font-light">
+            <strong class="font-semibold text-charcoal">
+              <span class="lang-en">Coach Gohil Pritiba Siddhraj Sinh:</span>
+              <span class="lang-gu">કોચ ગોહિલ પ્રીતિબા સિદ્ધરાજ સિંહ:</span>
+            </strong>
+            <span class="lang-en">“Health is true wealth. Our mission is to ensure genuine nutritional understanding reaches every individual and family.”</span>
+            <span class="lang-gu">“સ્વાસ્થ્ય એ જ સાચી સંપત્તિ છે. સકારાત્મક માર્ગદર્શન દ્વારા તંદુરસ્ત પરિવારનું નિર્માણ એ જ અમારું મિશન છે.”</span>
+          </div>
+        </div>
+
+        <!-- Right: Contact Card & Form -->
+        <div class="lg:col-span-6">
+          <div class="p-5 sm:p-7 md:p-8 rounded-2xl bg-white border border-charcoal-border/80 shadow-xs space-y-6">
+            <h3 class="heading-card">
+              <span class="lang-en">Contact & Center Information</span><span class="lang-gu">સંપર્ક માહિતી અને કેન્દ્રનું સરનામું</span>
+            </h3>
+
+            <div class="space-y-4 text-xs text-charcoal-muted">
+              
+              <div class="flex items-start gap-3.5 pb-4 border-b border-charcoal-border/40">
+                <div class="w-10 h-10 rounded-xl bg-sage-soft text-primary flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="phone" class="w-4 h-4"></i>
+                </div>
+                <div class="flex-1">
+                  <span class="text-label !text-[10px] text-charcoal-subtle block">
+                    <span class="lang-en">Direct Phone & WhatsApp</span><span class="lang-gu">ફોન અને વોટ્સએપ</span>
+                  </span>
+                  <a href="tel:+917623813787" class="text-base font-semibold text-charcoal hover:text-primary transition-colors block mt-0.5 min-h-[32px] py-0.5">
+                    +91 76238 13787
+                  </a>
+                  <span class="text-[11px] text-charcoal-subtle font-light block">Mon–Sat: 7:00 AM – 8:00 PM</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5 pb-4 border-b border-charcoal-border/40">
+                <div class="w-10 h-10 rounded-xl bg-sage-soft text-primary flex items-center justify-center shrink-0 mt-0.5">
+                  <i data-lucide="map-pin" class="w-4 h-4"></i>
+                </div>
+                <div class="space-y-0.5 flex-1">
+                  <span class="text-label !text-[10px] text-charcoal-subtle block">
+                    <span class="lang-en">Center Address (Bhavnagar)</span><span class="lang-gu">સેન્ટર સરનામું</span>
+                  </span>
+                  <p class="font-semibold text-charcoal text-xs sm:text-sm">Krivanshraj Wellness Center</p>
+                  <p class="font-light">Aakhlol Jakatnaka, Opposite 369 Hotel</p>
+                  <p class="font-light">Darbargadh, Bhavnagar, Gujarat - 364002</p>
+                  <p class="font-light text-primary text-[11px]">આખલોલ જકાતનાકા, ૩૬૯ હોટલની સામે, દરબારગઢ, ભાવનગર</p>
+                  <a href="https://www.google.com/maps/search/?api=1&query=Aakhlol+Jakatnaka+Opposite+369+Hotel+Darbargadh+Bhavnagar+364002" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-medium text-primary hover:underline pt-1.5 min-h-[36px]">
+                    <span class="lang-en">Open in Google Maps</span><span class="lang-gu">ગૂગલ મેપ્સ પર લોકેશન જુઓ</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Quick Inquiry Form -->
+            <div class="pt-2">
+              <span class="text-label !text-[10px] text-charcoal-subtle block mb-3">
+                <span class="lang-en">Quick Consultation Request</span><span class="lang-gu">ઝડપી પૂછપરછ</span>
+              </span>
+
+              <form onsubmit="handleContactSubmit(event)" class="space-y-3">
+                <div>
+                  <input type="text" id="contactName" required placeholder="Your Full Name *" class="w-full px-4 py-3 min-h-[46px] rounded-xl border border-charcoal-border focus:border-primary outline-none text-base sm:text-xs bg-ivory/50">
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <input type="tel" id="contactPhone" required placeholder="Mobile / WhatsApp *" class="w-full px-4 py-3 min-h-[46px] rounded-xl border border-charcoal-border focus:border-primary outline-none text-base sm:text-xs bg-ivory/50">
+                  </div>
+                  <div>
+                    <select id="contactGoal" class="w-full px-4 py-3 min-h-[46px] rounded-xl border border-charcoal-border focus:border-primary outline-none text-base sm:text-xs bg-ivory/50">
+                      <option value="Weight & Visceral Fat Loss">Weight & Fat Loss</option>
+                      <option value="Healthy Weight Gain & Recovery">Healthy Weight Gain</option>
+                      <option value="Skin Wellness & Allergy Relief">Skin & Allergy Relief</option>
+                      <option value="Daily Stamina & Energy">Daily Stamina & Energy</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit" class="w-full btn-primary min-h-[48px] text-xs uppercase tracking-wider justify-center">
+                  <span>Send via WhatsApp</span>
+                  <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1.5"></i>
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="bg-primary-dark text-ivory py-12 sm:py-16 border-t border-white/10 relative overflow-hidden">
+    <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 pb-10 sm:pb-12 border-b border-white/10">
+        
+        <div class="md:col-span-5 space-y-4">
+          <div class="inline-flex items-center gap-3">
+            <img src="./public/images/brand/krivanshraj-logo.png" alt="Logo" class="w-10 h-10 rounded-xl object-contain">
+            <div class="flex flex-col">
+              <span class="font-semibold uppercase tracking-[0.16em] text-xl text-ivory leading-none">KRIVANSHRAJ</span>
+              <span class="text-[9px] tracking-[0.22em] uppercase font-medium mt-1 text-sage-light">WELLNESS CENTER</span>
+            </div>
+          </div>
+          <p class="text-sage-light text-xs sm:text-sm max-w-sm font-light leading-relaxed">
+            <span class="lang-en">Dedicated to inspiring vibrant, healthy living through personalized nutrition, sustainable lifestyle habits, and direct 1-on-1 mentorship.</span>
+            <span class="lang-gu">ક્રિવાંશરાજ વેલનેસ સેન્ટર – યોગ્ય પોષણ, સ્વસ્થ જીવનશૈલી અને સકારાત્મક માર્ગદર્શન દ્વારા કાયમી સુખાકારી લાવવા માટે સમર્પિત.</span>
+          </p>
+          <div class="pt-1">
+            <span class="text-label !text-[10px] text-terracotta-light block">Certified Wellness Coach</span>
+            <p class="text-xs sm:text-sm font-medium text-white mt-0.5">Gohil Pritiba Siddhraj Sinh (વેલનેસ કોચ)</p>
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="text-label !text-[11px] text-terracotta-light">
+            <span class="lang-en">Navigation</span><span class="lang-gu">ઝડપી નેવિગેશન</span>
+          </h4>
+          <ul class="space-y-2 text-xs text-sage-light">
+            <li><a href="#hero" class="hover:text-white transition-colors min-h-[36px] flex items-center"><span class="lang-en">Home</span><span class="lang-gu">મુખ્ય પૃષ્ઠ</span></a></li>
+            <li><a href="#about" class="hover:text-white transition-colors min-h-[36px] flex items-center"><span class="lang-en">About Coach</span><span class="lang-gu">અમારા વિશે</span></a></li>
+            <li><a href="#approach" class="hover:text-white transition-colors min-h-[36px] flex items-center"><span class="lang-en">Our Approach</span><span class="lang-gu">અમારી પદ્ધતિ</span></a></li>
+            <li><a href="#archive" class="hover:text-white transition-colors min-h-[36px] flex items-center"><span class="lang-en">Results Archive</span><span class="lang-gu">પરિણામો</span></a></li>
+            <li><a href="#testimonials" class="hover:text-white transition-colors min-h-[36px] flex items-center"><span class="lang-en">Testimonials</span><span class="lang-gu">પ્રતિસાદ</span></a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors min-h-[36px] flex items-center"><span class="lang-en">Contact</span><span class="lang-gu">સંપર્ક</span></a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="text-label !text-[11px] text-terracotta-light">
+            <span class="lang-en">Center & Contact</span><span class="lang-gu">કેન્દ્ર સરનામું અને સંપર્ક</span>
+          </h4>
+          <div class="space-y-2.5 text-xs text-sage-light font-light">
+            <div class="flex items-start gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-terracotta-light shrink-0 mt-0.5"></i>
+              <span>Aakhlol Jakatnaka, Opp. 369 Hotel, Darbargadh, Bhavnagar - 364002</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-terracotta-light shrink-0"></i>
+              <a href="tel:+917623813787" class="hover:text-white transition-colors min-h-[36px] flex items-center">+91 76238 13787</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4 text-[#25D366] shrink-0"></i>
+              <a href="https://wa.me/917623813787" target="_blank" rel="noopener noreferrer" class="text-white hover:text-[#25D366] transition-colors font-medium min-h-[36px] flex items-center">WhatsApp: +91 76238 13787</a>
+            </div>
+          </div>
+          <div class="pt-2">
+            <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="inline-flex items-center gap-1.5 text-[11px] text-sage-light hover:text-white transition-colors border border-white/10 px-3.5 py-1.5 min-h-[44px] rounded-full active:bg-white/5">
+              <span>Back to top</span>
+              <i data-lucide="arrow-up" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-sage-light/70 gap-3 text-center sm:text-left">
+        <p>© 2026 Krivanshraj Wellness Center. All rights reserved.</p>
+        <p>Bhavnagar, Gujarat • Direct Line: +91 76238 13787</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       FLOATING WHATSAPP BUTTON (56px touch target)
+       ======================================================== -->
+  <aside class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40">
+    <a href="https://wa.me/917623813787?text=Hello%20Coach%20Pritiba%2C%20I%20would%20like%20to%20begin%20my%20personalized%20wellness%20and%20health%20transformation%20journey%20with%20Krivanshraj%20Wellness%20Center." target="_blank" rel="noopener noreferrer" aria-label="Chat with Coach Pritiba on WhatsApp" class="w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20BA5A] text-white flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform active:scale-95">
+      <svg viewBox="0 0 32 32" class="w-7 h-7 fill-current" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 2C8.268 2 2 8.268 2 16c0 2.668.748 5.163 2.051 7.29L2 30l6.903-2.007A13.916 13.916 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.56a11.51 11.51 0 0 1-5.875-1.602l-.422-.25-4.364 1.27 1.272-4.254-.275-.438A11.536 11.536 0 0 1 4.44 16c0-6.374 5.186-11.56 11.56-11.56 6.374 0 11.56 5.186 11.56 11.56 0 6.374-5.186 11.56-11.56 11.56zm6.336-8.663c-.347-.174-2.053-1.013-2.372-1.129-.319-.116-.551-.174-.783.174-.232.348-.899 1.129-1.101 1.361-.203.232-.406.261-.754.087-.348-.174-1.469-.541-2.798-1.727-1.034-.922-1.732-2.062-1.935-2.41-.203-.348-.022-.536.152-.709.157-.156.348-.406.522-.609.174-.203.232-.348.348-.58.116-.232.058-.435-.029-.609-.087-.174-.783-1.884-1.072-2.58-.282-.676-.569-.584-.783-.595l-.667-.012c-.232 0-.609.087-.928.435-.319.348-1.218 1.189-1.218 2.899 0 1.71 1.246 3.363 1.42 3.595.174.232 2.453 3.746 5.942 5.253.83.359 1.478.573 1.984.734.834.265 1.593.227 2.193.138.669-.1 2.053-.839 2.343-1.649.29-.812.29-1.508.203-1.65-.087-.142-.319-.232-.667-.406z" />
+      </svg>
+    </a>
+  </aside>
+
+  <!-- ========================================================
+       MODAL & LIGHTBOX SYSTEM
+       ======================================================== -->
+  <div id="generalModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-charcoal/70 backdrop-blur-sm" onclick="closeModal()">
+    <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-4 sm:p-6 md:p-8 shadow-2xl relative" onclick="event.stopPropagation()">
+      <button onclick="closeModal()" class="absolute top-3 right-3 sm:top-4 sm:right-4 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full hover:bg-black/5 text-charcoal">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+      <h3 id="modalTitle" class="font-serif text-lg sm:text-xl font-semibold text-charcoal mb-4 pr-10">
+        Verified Record — Coach Gohil Pritiba Siddhraj Sinh
+      </h3>
+      <div id="modalImageContainer" class="relative aspect-[3/4] rounded-xl overflow-hidden bg-ivory border border-charcoal-border mb-4">
+        <img id="modalImage" src="./public/images/brand/coach-pritiba-transformation.jpg" alt="Proof" class="w-full h-full object-contain">
+      </div>
+      <div id="modalText" class="p-3 sm:p-4 rounded-xl bg-ivory text-xs sm:text-sm text-charcoal space-y-2 font-mono whitespace-pre-wrap">
+ક્રિવાંશરાજ વેલનેસ સેન્ટર
+મારા વિશે - ગોહિલ પ્રીતિબા સિદ્ધરાજ સિંહ
+વેલનેસ કોચ | આરોગ્ય અને જીવનશૈલી માર્ગદર્શક
+
+હું ગોહિલ પ્રીતિબા સિદ્ધરાજ સિંહ એક વેલનેસ કોચ તરીકે લોકોને સ્વસ્થ, સક્રિય અને તંદુરસ્ત જીવનશૈલી અપનાવવા માટે માર્ગદર્શન આપું છું.
+- મેં પોતે ૮૪ કિલોથી ૬૫ કિલો સુધી પહોંચીને ૧૯ કિલો વજન અને ફેટ ઘટાડીને નવી ઊર્જા પ્રાપ્ત કરી છે.
+- સંપર્ક: ૭૬૨૩૮૧૩૭૮૭
+- સેન્ટર: આખલોલ જકાતનાકા, ૩૬૯ હોટલની સામે, દરબારગઢ, ભાવનગર (૩૬૪૦૦૨)
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Data for Lightbox
+    const items = [
+      {
+        title: "19 kg Weight & Fat Loss: 84 kg to 65 kg",
+        gujaratiTitle: "૮૪ કિલો થી ૬૫ કિલો – ૧૯ કિલો વજન અને ફેટ લોસ",
+        image: "./public/images/transformations/transformation-1-pritiba-fatloss-19kg.jpg",
+        category: "Weight Loss & Energy",
+        stats: [
+          { label: "Starting Weight", value: "84 kg" },
+          { label: "Achieved Weight", value: "65 kg" },
+          { label: "Total Reduction", value: "-19 kg" },
+          { label: "Daily Energy", value: "All-Day Active" }
+        ],
+        quote: "૮૪ કિલોથી ૬૫ કિલો સુધી પહોંચીને ૧૯ કિલો વજન અને વધારાની ચરબી ઘટાડી. શરીરમાં સ્ફૂર્તિ, હળવાશ અને આત્મવિશ્વાસ પાછો આવ્યો.",
+        desc: "An inspiring personal wellness journey demonstrating sustainable fat loss from 84 kg down to a healthy 65 kg."
+      },
+      {
+        title: "20 kg Milestone: 78 kg to 58 kg Transformation",
+        gujaratiTitle: "૭૮ કિલો થી ૫૮ કિલો – ૨૦ કિલો વજન ઘટાડાની સફર",
+        image: "./public/images/transformations/transformation-2-weightloss-20kg.jpg",
+        category: "Weight Loss Journeys",
+        stats: [
+          { label: "Starting Weight", value: "78 kg" },
+          { label: "Achieved Weight", value: "58 kg" },
+          { label: "Total Reduction", value: "-20 kg" },
+          { label: "Routine", value: "Sustainable" }
+        ],
+        quote: "કોઈ કડક ભૂખમરા વગર યોગ્ય પોષણ સાથે ૨૦ કિલો વજન ઘટાડીને નવું આત્મવિશ્વાસભર્યું જીવન મેળવ્યું.",
+        desc: "An inspiring feminine transformation journey dropping from 78 kg down to a healthy 58 kg."
+      },
+      {
+        title: "Abdominal & Visceral Fat Loss",
+        gujaratiTitle: "પેટની ચરબી અને કમર ઘટાડો – પુરુષો માટે ફિટનેસ પરિવર્તન",
+        image: "./public/images/transformations/transformation-3-mens-fatloss.jpg",
+        category: "Visceral Fat & Posture",
+        stats: [
+          { label: "Abdominal Bulk", value: "Noticeably Reduced" },
+          { label: "Posture & Fit", value: "Slim & Confident" },
+          { label: "Stamina", value: "All-Day Active" },
+          { label: "Habit Shift", value: "Structured Timing" }
+        ],
+        quote: "વ્યક્તિ દીઠ રિઝલ્ટ અલગ અલગ હોય શકે છે. પેટની ચરબી ઘટી, શરીર હળવું થયું અને રોજિંદા કામોમાં સ્ફૂર્તિ વધી.",
+        desc: "Targeted posture and abdominal contour improvement."
+      },
+      {
+        title: "Hospital Recovery to 55 kg: Healthy Weight Gain",
+        gujaratiTitle: "હોસ્પિટલ રિકવરી થી ૫૫ કિલો – સ્વસ્થ વજન વધારો",
+        image: "./public/images/transformations/transformation-4-recovery-gain.jpg",
+        category: "Recovery & Healthy Gain",
+        stats: [
+          { label: "Starting", value: "45 kg" },
+          { label: "Healthy Weight", value: "55 kg" },
+          { label: "Gain", value: "+10 kg" },
+          { label: "Vitality", value: "Full Recovery" }
+        ],
+        quote: "વ્યક્તિદીઠ રિઝલ્ટ અલગ અલગ હોય છે. નબળાઈમાંથી બહાર આવીને ૪૫ કિલો થી ૫૫ કિલો તંદુરસ્ત વજન પ્રાપ્ત કર્યું.",
+        desc: "Rebuilding strength and lean healthy weight after hospital convalescence."
+      },
+      {
+        title: "Hetalba Rajput: Chronic Skin Allergy Relief",
+        gujaratiTitle: "હેતલબા રાજપૂત: બાળપણની ચામડીની ગંભીર ખંજવાળમાંથી મુક્તિ",
+        image: "./public/images/transformations/transformation-5-hetalba-skin-allergy.jpg",
+        category: "Skin & Allergy Relief",
+        stats: [
+          { label: "History", value: "Since Age 7" },
+          { label: "Duration", value: "4 Months" },
+          { label: "Severe Itching", value: "Completely Calmed" },
+          { label: "Satisfaction", value: "Extremely Happy" }
+        ],
+        quote: "બાળપણ માં 7 વર્ષ ના હતા ત્યાર ની આખા શરીર માં ચામડી ની આવી તકલીફ હતી... 4 મહિના થી આ ન્યુટ્રીશન થી ઘણો ફરક પડ્યો છે... હાલ સાવ ફરક પડી ગયો છે ખંજવાળ માં .... ખુબ ખુશ છે...",
+        desc: "Chronic severe dermatological itching and distress calmed within 4 months through cellular nutrition."
+      },
+      {
+        title: "Pediatric Wellness: Relief from Allergies & Distress",
+        gujaratiTitle: "બાળ સ્વાસ્થ્ય: સ્કીન પ્રોબ્લેમ, ધૂળની એલર્જી અને યુરિન સમસ્યામાં સુધારો",
+        image: "./public/images/transformations/transformation-6-child-skin-wellness.jpg",
+        category: "Pediatric & Cellular Wellness",
+        stats: [
+          { label: "Skin Irritation", value: "Greatly Improved" },
+          { label: "Dust Allergy", value: "Relieved" },
+          { label: "Urination", value: "Normal" },
+          { label: "Vitality", value: "Happy & Playful" }
+        ],
+        quote: "અદ્ભુત રિઝલ્ટ! સ્કીન પ્રોબ્લેમ, ખંજવાળ, ધૂળની એલર્જી અને વધુ યુરિનની સમસ્યામાં શાનદાર સુધારો.",
+        desc: "Proper micro-nutrient support and hydration helped calm skin sensitivity and allergies."
+      },
+      {
+        title: "Cellular Nutrition for Skin Pigmentation Wellness",
+        gujaratiTitle: "આંતરિક પોષણ દ્વારા ત્વચાના ડાઘ અને પિગમેન્ટેશનમાં સુધારો",
+        image: "./public/images/transformations/transformation-7-vitiligo-pigmentation.jpg",
+        category: "Skin & Cellular Health",
+        stats: [
+          { label: "Pigmentation", value: "Evening Out" },
+          { label: "Skin Barrier", value: "Nourished & Calm" },
+          { label: "Method", value: "Cellular Nutrition" },
+          { label: "Balance", value: "Restored" }
+        ],
+        quote: "આંતરિક શુદ્ધિકરણ અને પોષક તત્વોના સંતુલનથી ત્વચાના કુદરતી રંગ અને ચમકમાં ઉત્સાહજનક સુધારો થયો.",
+        desc: "Supporting the immune and metabolic pathways with optimal cellular nutrition aids skin tone."
+      },
+      {
+        title: "Eye & Facial Cellular Vitality",
+        gujaratiTitle: "આંખ અને ચહેરાનું અદ્ભુત પરિણામ – કુદરતી તેજ અને તાજગી",
+        image: "./public/images/transformations/transformation-8-eye-facial-vitality.jpg",
+        category: "Facial & Eye Vitality",
+        stats: [
+          { label: "Eye Freshness", value: "Bright & Clear" },
+          { label: "Complexion", value: "Radiant & Nourished" },
+          { label: "Fatigue", value: "Relieved" },
+          { label: "Glow", value: "Restored" }
+        ],
+        quote: "આંખનું અમેઝિંગ જોરદાર રિઝલ્ટ! ચહેરા પર કુદરતી ચમક આવી અને આંખોની થાક દૂર થઈ.",
+        desc: "Proper hydration and antioxidant intake revitalize the eyes and facial complexion naturally."
+      }
+    ];
+
+    // Language Toggle
+    let currentLang = 'en';
+    function toggleLanguage() {
+      currentLang = currentLang === 'en' ? 'gu' : 'en';
+      document.body.setAttribute('data-lang', currentLang);
+      document.getElementById('langBtnLabel').textContent = currentLang === 'en' ? 'ગુજરાતી' : 'English';
+      lucide.createIcons();
+    }
+
+    // Mobile Menu Toggle with body scroll lock
+    let isMenuOpen = false;
+    function toggleMobileMenu() {
+      isMenuOpen = !isMenuOpen;
+      const modal = document.getElementById('mobileDrawerModal');
+      if (isMenuOpen) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      } else {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // FAQ Accordion Toggle
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('[data-lucide="chevron-down"]');
+      content.classList.toggle('hidden');
+      if (icon) {
+        icon.classList.toggle('rotate-180');
+      }
+    }
+
+    // Gallery Filter
+    function filterGallery(category) {
+      const cards = document.querySelectorAll('.gallery-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-category') === category) {
+          btn.classList.add('bg-primary', 'text-ivory', 'border-primary', 'shadow-xs');
+          btn.classList.remove('bg-ivory', 'text-charcoal', 'border-charcoal-border/70');
+        } else {
+          btn.classList.remove('bg-primary', 'text-ivory', 'border-primary', 'shadow-xs');
+          btn.classList.add('bg-ivory', 'text-charcoal', 'border-charcoal-border/70');
+        }
+      });
+
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Modal Control with body scroll lock
+    function openModal() {
+      document.getElementById('generalModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('generalModal').classList.add('hidden');
+      if (!isMenuOpen) {
+        document.body.style.overflow = '';
+      }
+    }
+
+    function openLightbox(index) {
+      const item = items[index];
+      if (!item) return;
+
+      document.getElementById('modalTitle').textContent = currentLang === 'gu' ? item.gujaratiTitle : item.title;
+      document.getElementById('modalImage').src = item.image;
+      
+      let text = `Category: ${item.category}\n\n`;
+      item.stats.forEach(s => {
+        text += `• ${s.label}: ${s.value}\n`;
+      });
+      if (item.quote) {
+        text += `\n“${item.quote}”\n`;
+      }
+      text += `\n${item.desc}\n\nContact Coach Pritiba: +91 76238 13787 (Bhavnagar)`;
+      document.getElementById('modalText').textContent = text;
+      
+      document.getElementById('generalModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Form submission
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value;
+      const phone = document.getElementById('contactPhone').value;
+      const goal = document.getElementById('contactGoal').value;
+      const msg = `Hello Coach Pritiba,%0A%0AMy Name: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AGoal: ${encodeURIComponent(goal)}%0A%0AHello, I would like to know more about your wellness programs.`;
+      window.open(`https://wa.me/917623813787?text=${msg}`, '_blank');
+    }
+  </script>
+</body>
+</html>
